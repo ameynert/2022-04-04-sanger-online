@@ -100,9 +100,6 @@ This is a pilot workshop, testing out a lesson that is still under development. 
 {% comment %}
 AUDIENCE
 
-The primary audience are researchers on the Aquatic Symbiosis Genomics (ASG) project.  ASG aims at studying 500 pairs of marine symbiotic system and hopefully the research is helpful in understanding the evolution of marine life. Therefore, the majority of learners are biologist with lots of experience in practical works but know little of bioinformatics. As part of ASG, they are submitting samples to Sanger for genome extraction, sequencing, assembly and curation; in a later stage, genomic data are published and our learners will continue their research base on the data.
- 
-Depending on the registration condition within the ASG project, we may have a few additional learners from within the Wellcome Sanger Institute, who have similar background but their focus are on human genomes.
 {% endcomment %}
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
@@ -355,16 +352,7 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="schedule">Schedule</h2>
 
-{% if site.carpentry == "swc" %}
-{% include swc/schedule.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/schedule.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/schedule.html %}
-{% elsif site.carpentry == "incubator" %}
-This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
-Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
-{% endif %}
+{% include custom-schedule.html %}
 
 {% comment %}
 Edit/replace the text above if you want to include a schedule table.
